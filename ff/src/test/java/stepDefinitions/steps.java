@@ -85,10 +85,9 @@ driver.findElement(By.id("edit-submit")).click();
 @Then("^validate form is submitted or not$")
 public void validate()
 {
-String str="submitted successfully";
-			WebElement f=driver.findElement(By.xpath("[//*text()='Successfully submitted']"));
-			String mtr=f.getText();
-			Assert.assertEquals(mtr,str);
+	String d="submitted successfully";
+	String f=driver.findElement(By.xpath("(//*[@id='wrapper']/section/section/div/div[1]")).getText();
+	Assert.assertEquals(d,f);
 
 }
 
